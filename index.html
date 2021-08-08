@@ -1,0 +1,77 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Dash</title>
+    <link rel="stylesheet" type="text/css" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar  text-center>
+            <h1 class="text-light">Weather Dash</h1>
+            <button class="btn btn-dark" id="btnn">Clear</button>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-sm-12 col-md-3
+             ml-0 overflow-auto" id="test1">
+
+                <form class="form-inline" id="searchForm">
+                    <h4>City: </h4>
+                    <input class="form-control mr-md-0 col-sm-12" id='searchBar' type="search" placeholder="Miami"
+                        aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" id='searchButton' type="submit">Search</button>
+                </form>
+
+                <div id="history"></div>
+            </div>
+            <div class="col-md-9 overflow-auto" id='test2'>
+                <div class="row">
+                    <div class="col-md-12" id="cityDiv">
+                    </div>
+                </div>
+                <div class="row justify-content-xs-center">
+                    <div class="col-md-12" id="nest2">
+                        <h4 id="forecastHeading">Forecast: </h4>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="card-body col-xs-1 col-sm-2 col-md-4  weatherBlock" id='section1' data-count="1"
+                        id="card1">
+
+                    </div>
+
+                    <div class="card-body col-xs-1 col-sm-2 col-md-4 weatherBlock" data-count="2" id="section2">
+
+                    </div>
+
+                    <div class="card-body col-xs-1 col-sm-2 col-md-4 weatherBlock" data-count="3" id="section3">
+
+                    </div>
+
+                    <div class="card-body col-xs-1 weatherBlock col-sm-2 col-md-4" data-count="4" id="section4">
+
+                    </div>
+
+                    <div class="card-body col-xs-1 weatherBlock col-sm-2 col-md-4" data-count="5" id="section5">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es-us.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="./Assets/script.js"></script>
+</body>
+
+</html>
